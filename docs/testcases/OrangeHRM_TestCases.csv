@@ -1,0 +1,12 @@
+TestCaseID,Module,Title,Preconditions,TestSteps,TestData,ExpectedResult,Priority,Status
+TC_LOGIN_01,Authentication,Login with valid credentials,User is on login page,Enter valid username and password;Click Login,admin/admin123,User is redirected to dashboard,High,Not Executed
+TC_LOGIN_02,Authentication,Login with invalid username,User is on login page,Enter invalid username and valid password;Click Login,invalid/admin123,Error message is displayed,High,Not Executed
+TC_LOGIN_03,Authentication,Login with invalid password,User is on login page,Enter valid username and invalid password;Click Login,admin/invalid,Error message is displayed,High,Not Executed
+TC_LOGIN_04,Authentication,Login with empty fields,User is on login page,Leave username and password empty;Click Login,N/A,Validation message is displayed,High,Not Executed
+TC_LOGOUT_01,Authentication,Logout from application,User is logged in,Click on user menu;Click Logout,N/A,User is logged out successfully,Medium,Not Executed
+TC_EMP_01,Employee Management,Add new employee with valid data,Admin is logged in,Navigate to Add Employee;Enter valid details;Click Save,Valid employee data,Employee is added successfully,High,Not Executed
+TC_EMP_02,Employee Management,Add employee with missing mandatory fields,Admin is logged in,Navigate to Add Employee;Leave mandatory fields empty;Click Save,N/A,Validation message is displayed,High,Not Executed
+TC_EMP_03,Employee Management,Search employee by name,Admin is logged in,Navigate to Employee List;Enter employee name;Click Search,Existing employee,Employee appears in search results,Medium,Not Executed
+TC_EMP_04,Employee Management,Edit employee details,Admin is logged in,Search employee;Edit details;Click Save,Updated employee data,Employee details updated successfully,Medium,Not Executed
+TC_LEAVE_01,Leave Management,Assign leave to employee,Admin is logged in,Navigate to Assign Leave;Select employee;Enter leave details;Submit,Valid leave data,Leave is assigned successfully,High,Not Executed
+TC_REC_01,Recruitment,Add new candidate,Admin is logged in,Navigate to Recruitment;Add candidate details;Save,Valid candidate data,Candidate added successfully,Medium,Not Executed
