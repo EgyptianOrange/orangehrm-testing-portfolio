@@ -12,7 +12,7 @@ and meet the defined requirements.
 - Application Name: OrangeHRM Demo
 - Application Type: Web-based HR Management System
 - Environment: Demo / Staging
-- Browser: Google Chrome (latest)
+- Browser: Google Chrome 
 
 ---
 
@@ -52,7 +52,7 @@ and meet the defined requirements.
 ---
 
 ## 6. Test Environment
-- Operating System: Windows 10
+- Operating System: Windows 11
 - Browser: Google Chrome
 - Tools:
   - VS Code

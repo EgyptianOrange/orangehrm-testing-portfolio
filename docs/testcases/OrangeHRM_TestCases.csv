@@ -1,0 +1,32 @@
+TestCaseID,Module,Title,Preconditions,TestSteps,TestData,ExpectedResult,Priority,Status,Severity,Bug ID,Note
+TC_LOGIN_01,Authentication,Login with valid credentials,User is on login page,Enter valid username and password;Click Login,Admin/admin123,User is redirected to dashboard,High,Pass,,,
+TC_LOGIN_02,Authentication,Login with invalid username,User is on login page,Enter invalid username and valid password;Click Login,invalid/admin123,Error message is displayed,High,Pass,,,
+TC_LOGIN_03,Authentication,Login with invalid password,User is on login page,Enter valid username and invalid password;Click Login,admin/invalid,Error message is displayed,High,Pass,,,
+TC_LOGIN_04,Authentication,Login with empty fields,User is on login page,Leave username and password empty;Click Login,N/A,Validation message is displayed,High,Pass,,,
+TC_LOGIN_05,Authentication,Login with special characters in username,User is on login page,Enter username with special characters;Click Login,@@@@/admin123,Validation message is displayed,HIgh,Pass,,,
+TC_LOGIN_06,Authentication,Login with empty password,User is on login page,Enter empty password;Click Login,Admin/,Validation message is displayed,High,Pass,,,
+TC_LOGOUT_01,Authentication,Logout from application,User is logged in,Click on user menu;Click Logout,N/A,User is logged out successfully,Medium,Pass,,,
+TC_EMP_01,Employee Management,Add new employee with valid data,Admin is logged in,Navigate to Add Employee;Enter valid details;Click Save,Valid employee data,Employee is added successfully,High,Pass,,,
+TC_EMP_02,Employee Management,Add employee with missing mandatory fields,Admin is logged in,Navigate to Add Employee;Leave mandatory fields empty;Click Save,N/A,Validation message is displayed,High,Pass,,,
+TC_EMP_03,Employee Management,Search employee by name,Admin is logged in,Navigate to Employee List;Enter employee name;Click Search,Existing employee,Employee appears in search results,Medium,Pass,,,
+TC_EMP_04,Employee Management,Edit employee details,Admin is logged in,Search employee;Edit details;Click Save,Updated employee data,Employee details updated successfully,Medium,Pass,,,
+TC_EMP_05,Employee Management,Add employee with very long first name,Admin is logged in,Navigate to Add Employee;Enter first name with 100+ charachters;Click Save,Invalid first name,System should restrict input or show validation message,Medium,Pass,,,
+TC_EMP_06,Employee Management,Add employee without saving then refresh page,Admin is logged in,Navigate to Add Employee;Fill information;Click Refresh without saving,Valid data,Data should not be saved,High,Pass,,,
+TC_EMP_07,Employee Management,Search employee by non-existent name,Admin is logged in,Navigate to Employee List;Enter invalid employee name;Click Search,non-Existing employee,"""No Records Found"" message is displayed",High,Pass,,,
+TC_EMP_08,Employee Management,Delete an existing employee,Admin is logged in,Navigate to Employee List and Delete an existing employee;Click Confirm,N/A,Employee is deleted successfully,High,Pass,,,
+TC_EMP_09,Employee Management,Add a new employee with existing record,Admin is logged in,Navigate to Add Employee;Enter existing employee details;Click Save,Existing employee details,Validation message is displayed,High,Pass,,,
+TC_LEAVE_01,Leave Management,Assign leave to employee,Admin is logged in,Navigate to Assign Leave;Select employee;Enter leave details;Submit,Valid leave data,Leave is assigned successfully,High,Pass,,,
+TC_LEAVE_02,Leave Management,Apply leave with past date,Admin is logged in,Navigate to Assign Leave;Select employee;Enter leave with past date;Submit,Past date,System should not allow submitting leave for past dates,High,Failed,Major,Bug_01,System allows applying leave with past date
+TC_LEAVE_03,Leave Management,Leave balance updates correctly,Admin is logged in,Navigate to Assign Leave;Assign Leave to an employee;Check Leave balance,N/A,Balance changes based on leave type and days,High,Pass,,,
+TC_LEAVE_04,Leave Management,Leave request appears in leave list,Admin is logged in,Navigate to Assign Leave;Assign Leave to an employee;Check Leave List,N/A,Leave list updates correctly,High,Pass,,,
+TC_LEAVE_05,Leave Management,Leave status updated correctly(pending-approved-denied,Admin is logged in,Navigate to Assign Leave;Reject Leave;Check Leave List,N/A,Leave list updates correctly,High,Pass,,,
+TC_REC_01,Recruitment,Add new candidate,Admin is logged in,Navigate to Recruitment;Add candidate details;Save,Valid candidate data,Candidate added successfully,Medium,Pass,,,
+TC_REC_02,Recruitment,Add candidate with missing mandatory fields,Admin is logged in,Navigate to Recruitment;Leave mandatory fields empty;Click Save,N/A,Validation message is displayed,High,Pass,,,
+TC_REC_03,Recruitment,Schedule interview,Admin is logged in,Navigate to Recruitment;Setup an interview;Click Save,N/A,candidate is rejected  successfully,High,Pass,,,
+TC_REC_04,Recruitment,Update candidate status,Admin is logged in,Navigate to Recruitment;Approve a candidate;Check Status,N/A,Status updated successfully,High,Pass,,,Status is changed when rejected but the site doesn't have the feature to aprove candidates
+TC_SESSION_01,Authentication,Session timeout after inactivity,User is logged in,Stay inactive for 30 minutes,N/A,Timeout and the user to be logged out,Medium,Pass,,,User redirected to login on any action
+TC_SESSION_02,Session Handling,Access internal page after logout using back button,User is logged in,Click on user menu;Click Logout;Click browser back button,N/A,User should not access system without login,High,Pass,,,"Page accessible via browser cache, but user redirected to login on any action"
+TC_SESSION_03,Session Handling,Verify required fields show validation messages,User is logged in,Open a form;Leave all required fields empty;Click Save/Submit,N/A,Validation messages are displayed for all required fields,High,Pass,,,
+TC_SESSION_04,Session Handling,Verify error messages are user-friendly,User is logged in,Enter invalid data in input field;Click submit,Invalid data,Clear and understandable error messages are displayed,Medium,Pass,,,
+TC_SESSION_05,Session Handling,Verify application behavior on browser refresh,User is logged in,Navigate to any internal page;Refresh the browser,N/A,Application behaves correctly without data loss or errors,Medium,Pass,,,
+TC_SESSION_06,Session Handling,Verify application displays proper success messages,User is logged in,Perform a valid action;Click submit,Valid data,Proper success message is displayed,Medium,Pass,,,
