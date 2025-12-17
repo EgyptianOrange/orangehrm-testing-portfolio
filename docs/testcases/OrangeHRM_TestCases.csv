@@ -30,3 +30,4 @@ TC_SESSION_03,Session Handling,Verify required fields show validation messages,U
 TC_SESSION_04,Session Handling,Verify error messages are user-friendly,User is logged in,Enter invalid data in input field;Click submit,Invalid data,Clear and understandable error messages are displayed,Medium,Pass,,,
 TC_SESSION_05,Session Handling,Verify application behavior on browser refresh,User is logged in,Navigate to any internal page;Refresh the browser,N/A,Application behaves correctly without data loss or errors,Medium,Pass,,,
 TC_SESSION_06,Session Handling,Verify application displays proper success messages,User is logged in,Perform a valid action;Click submit,Valid data,Proper success message is displayed,Medium,Pass,,,
+
