@@ -107,7 +107,7 @@ and meet the defined requirements.
 |--------|----------|
 | Test Planning | 1 Day |
 | Test Scenario Design | 2 Days |
-| Test Case Writing | 3 Days |
+| Test Case Writing | 2 Days |
 | Test Execution | 2 Days |
-| Bug Reporting | 2 Days |
-| Automation (Basic) | 2 Days |
+| Bug Reporting | 1 Days |
+| Automation (Basic) | 1 Days |
