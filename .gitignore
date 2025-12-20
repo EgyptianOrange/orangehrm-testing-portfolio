@@ -1,0 +1,12 @@
+# ===== Automation outputs =====
+Automation\orangehrm-automation\screenshots
+Automation\orangehrm-automation\target
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== Logs =====
+*.log

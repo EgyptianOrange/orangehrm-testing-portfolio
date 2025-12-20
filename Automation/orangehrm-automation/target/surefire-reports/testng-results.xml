@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-20T17:36:33 GST" name="Surefire suite" finished-at="2025-12-20T17:36:48 GST" duration-ms="15121">
+    <groups>
+    </groups>
+    <test started-at="2025-12-20T17:36:33 GST" name="Surefire test" finished-at="2025-12-20T17:36:48 GST" duration-ms="15121">
+      <class name="com.orangehrm.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:33 GST" name="setUp" finished-at="2025-12-20T17:36:39 GST" duration-ms="5901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginShowsErrorMessage()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:39 GST" name="invalidLoginShowsErrorMessage" finished-at="2025-12-20T17:36:41 GST" duration-ms="2082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginShowsErrorMessage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:41 GST" name="tearDown" finished-at="2025-12-20T17:36:42 GST" duration-ms="222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginShowsErrorMessage status=SUCCESS method=LoginTest.invalidLoginShowsErrorMessage()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:42 GST" name="setUp" finished-at="2025-12-20T17:36:46 GST" duration-ms="4859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:46 GST" name="validLoginTest" finished-at="2025-12-20T17:36:48 GST" duration-ms="1819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:48 GST" name="tearDown" finished-at="2025-12-20T17:36:48 GST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.tests.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
