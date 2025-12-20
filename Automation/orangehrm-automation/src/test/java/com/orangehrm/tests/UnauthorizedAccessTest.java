@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class UnauthorizedAccessTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"smoke"})
     public void cannotAccessRestrictedPageAfterLogout() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("Admin", "admin123");

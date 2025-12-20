@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"smoke"})
     public void validLoginTest() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("Admin", "admin123");
@@ -15,7 +15,7 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"),
                 "User should be redirected to dashboard after login.");
     }
-    @Test
+    @Test(groups = {"smoke"})
     public void invalidLoginShowsErrorMessage() {
     LoginPage loginPage = new LoginPage(driver);
     loginPage.login("Admin", "wrongpass");

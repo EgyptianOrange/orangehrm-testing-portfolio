@@ -1,44 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-20T17:36:33 GST" name="Surefire suite" finished-at="2025-12-20T17:36:48 GST" duration-ms="15121">
+  <suite started-at="2025-12-20T23:42:56 GST" name="Surefire suite" finished-at="2025-12-20T23:43:33 GST" duration-ms="36928">
     <groups>
+      <group name="smoke">
+        <method signature="LoginTest.invalidLoginShowsErrorMessage()[pri:0, instance:com.orangehrm.tests.LoginTest@2473d930]" name="invalidLoginShowsErrorMessage" class="com.orangehrm.tests.LoginTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:0, instance:com.orangehrm.tests.LoginTest@2473d930]" name="validLoginTest" class="com.orangehrm.tests.LoginTest"/>
+        <method signature="LogoutTest.userCanLogoutSuccessfully()[pri:0, instance:com.orangehrm.tests.LogoutTest@35047d03]" name="userCanLogoutSuccessfully" class="com.orangehrm.tests.LogoutTest"/>
+        <method signature="UnauthorizedAccessTest.cannotAccessRestrictedPageAfterLogout()[pri:0, instance:com.orangehrm.tests.UnauthorizedAccessTest@49b0b76]" name="cannotAccessRestrictedPageAfterLogout" class="com.orangehrm.tests.UnauthorizedAccessTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-12-20T17:36:33 GST" name="Surefire test" finished-at="2025-12-20T17:36:48 GST" duration-ms="15121">
-      <class name="com.orangehrm.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:33 GST" name="setUp" finished-at="2025-12-20T17:36:39 GST" duration-ms="5901" status="PASS">
+    <test started-at="2025-12-20T23:42:56 GST" name="Surefire test" finished-at="2025-12-20T23:43:33 GST" duration-ms="36928">
+      <class name="com.orangehrm.tests.LogoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.LogoutTest@35047d03]" started-at="2025-12-20T23:43:12 GST" name="setUp" finished-at="2025-12-20T23:43:18 GST" duration-ms="5227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginShowsErrorMessage()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:39 GST" name="invalidLoginShowsErrorMessage" finished-at="2025-12-20T17:36:41 GST" duration-ms="2082" status="PASS">
+        <test-method signature="userCanLogoutSuccessfully()[pri:0, instance:com.orangehrm.tests.LogoutTest@35047d03]" started-at="2025-12-20T23:43:18 GST" name="userCanLogoutSuccessfully" finished-at="2025-12-20T23:43:22 GST" duration-ms="4174" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:41 GST" name="tearDown" finished-at="2025-12-20T17:36:42 GST" duration-ms="222" status="PASS">
+        </test-method> <!-- userCanLogoutSuccessfully -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.LogoutTest@35047d03]" started-at="2025-12-20T23:43:22 GST" name="tearDown" finished-at="2025-12-20T23:43:22 GST" duration-ms="214" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidLoginShowsErrorMessage status=SUCCESS method=LoginTest.invalidLoginShowsErrorMessage()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811] output={null}]]]>
+                <![CDATA[[TestResult name=userCanLogoutSuccessfully status=SUCCESS method=LogoutTest.userCanLogoutSuccessfully()[pri:0, instance:com.orangehrm.tests.LogoutTest@35047d03] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:42 GST" name="setUp" finished-at="2025-12-20T17:36:46 GST" duration-ms="4859" status="PASS">
+      </class> <!-- com.orangehrm.tests.LogoutTest -->
+      <class name="com.orangehrm.tests.UnauthorizedAccessTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.UnauthorizedAccessTest@49b0b76]" started-at="2025-12-20T23:43:22 GST" name="setUp" finished-at="2025-12-20T23:43:28 GST" duration-ms="5511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:46 GST" name="validLoginTest" finished-at="2025-12-20T17:36:48 GST" duration-ms="1819" status="PASS">
+        <test-method signature="cannotAccessRestrictedPageAfterLogout()[pri:0, instance:com.orangehrm.tests.UnauthorizedAccessTest@49b0b76]" started-at="2025-12-20T23:43:28 GST" name="cannotAccessRestrictedPageAfterLogout" finished-at="2025-12-20T23:43:33 GST" duration-ms="5493" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811]" started-at="2025-12-20T17:36:48 GST" name="tearDown" finished-at="2025-12-20T17:36:48 GST" duration-ms="191" status="PASS">
+        </test-method> <!-- cannotAccessRestrictedPageAfterLogout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.UnauthorizedAccessTest@49b0b76]" started-at="2025-12-20T23:43:33 GST" name="tearDown" finished-at="2025-12-20T23:43:33 GST" duration-ms="188" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:0, instance:com.orangehrm.tests.LoginTest@20d28811] output={null}]]]>
+                <![CDATA[[TestResult name=cannotAccessRestrictedPageAfterLogout status=SUCCESS method=UnauthorizedAccessTest.cannotAccessRestrictedPageAfterLogout()[pri:0, instance:com.orangehrm.tests.UnauthorizedAccessTest@49b0b76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.tests.UnauthorizedAccessTest -->
+      <class name="com.orangehrm.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.LoginTest@2473d930]" started-at="2025-12-20T23:42:56 GST" name="setUp" finished-at="2025-12-20T23:43:02 GST" duration-ms="5264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginShowsErrorMessage()[pri:0, instance:com.orangehrm.tests.LoginTest@2473d930]" started-at="2025-12-20T23:43:02 GST" name="invalidLoginShowsErrorMessage" finished-at="2025-12-20T23:43:04 GST" duration-ms="2185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginShowsErrorMessage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.LoginTest@2473d930]" started-at="2025-12-20T23:43:04 GST" name="tearDown" finished-at="2025-12-20T23:43:04 GST" duration-ms="250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginShowsErrorMessage status=SUCCESS method=LoginTest.invalidLoginShowsErrorMessage()[pri:0, instance:com.orangehrm.tests.LoginTest@2473d930] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.LoginTest@2473d930]" started-at="2025-12-20T23:43:04 GST" name="setUp" finished-at="2025-12-20T23:43:10 GST" duration-ms="5972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest()[pri:0, instance:com.orangehrm.tests.LoginTest@2473d930]" started-at="2025-12-20T23:43:10 GST" name="validLoginTest" finished-at="2025-12-20T23:43:12 GST" duration-ms="2187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.LoginTest@2473d930]" started-at="2025-12-20T23:43:12 GST" name="tearDown" finished-at="2025-12-20T23:43:12 GST" duration-ms="197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:0, instance:com.orangehrm.tests.LoginTest@2473d930] output={null}]]]>
               </value>
             </param>
           </params>

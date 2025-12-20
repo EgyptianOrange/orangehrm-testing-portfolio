@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class LogoutTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"smoke"})
     public void userCanLogoutSuccessfully() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("Admin", "admin123");
